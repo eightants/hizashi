@@ -17,6 +17,11 @@ h1, h2, h3, h4 {
   font-weight: 200;
 }
 
+a {
+  /*text-decoration: underline;*/
+  color: black!important;
+}
+
 
 h1 {
 
@@ -175,12 +180,33 @@ nav {
   /*border-bottom: 3px solid black;*/
 }
 
+.floatingNav {
+  box-shadow: 0px 0px 6px 2px rgb(0, 0, 0, 0.1);
+}
+
 .navbar-brand {
   font-size: 1rem;
 }
 
 .align-right {
   text-align: right;
+}
+
+.clr-b {
+  color: black!important;
+  text-decoration: none;
+}
+
+.circle {
+  text-align: right;
+  border: 3px solid black;
+  border-radius: 100px;
+  background-color: white;
+  margin-top: 40px;
+  width: 80px;
+  height: 80px;
+  -webkit-box-shadow: 8px 8px;
+  box-shadow: 8px 8px;
 }
 
 .black {
@@ -193,6 +219,18 @@ nav {
 
 .ov {
   overflow: hidden;
+}
+
+.tag {
+  font-size: 0.75rem;
+  font-family: 'Lato', sans-serif!important;
+  font-weight: 800;
+  border: 3px solid black;
+  background-color: rgba(255,255,255,.5);
+  margin: 10px 0px;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
 }
 
 .btn {
@@ -250,6 +288,10 @@ nav {
 
 /* WHAT I DO/Professional Presence */
 
+#interest p {
+  width: 85%;
+}
+
 .content-block {
   margin-top: 40px;
 }
@@ -264,7 +306,7 @@ nav {
   margin: 20px 0px;
   margin-right: 40px;
   border: 3px solid black;
-  padding: 0px 30px;
+  padding: 10px 30px 0px 30px;
   -webkit-box-shadow: 10px 10px;
   box-shadow: 10px 10px;
 }
@@ -273,6 +315,7 @@ nav {
   font-size: 1rem;
   line-height: 1.5rem;
   margin-left: 0px;
+  width: 100%!important;
   
 }
 
@@ -282,7 +325,8 @@ nav {
 }
 
 pre {
-  font-size: 1.125rem;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
   overflow: auto;
   padding: 30px 30px;
   background-color: black;
@@ -290,9 +334,11 @@ pre {
   border-radius: 5px;
   white-space: pre-wrap;
   word-break: break-word;
+  tab-size: 2rem;
+  line-height: 1.5rem;
 }
 
-input {
+input, .submit-btn {
   font-family: "Lato", sans-serif;
   font-size: 1em;
 }
@@ -304,7 +350,7 @@ input[type="text"] {
   width: calc(70% - 10px);
 }
 
-input[type="submit"] {
+.submit-btn {
   font-weight: 800;
   border: 3px solid black;
   padding: 12px 15px;
@@ -315,7 +361,7 @@ input[type="submit"] {
   transition: all 0.2s ease;
 }
 
-input[type="submit"]:hover {
+.submit-btn:hover {
   cursor: pointer;
   -webkit-box-shadow: 5px 5px;
   box-shadow: 5px 5px;
@@ -384,7 +430,8 @@ input[type="submit"]:hover {
 /* ABOUT PAGE */
 
 #pfp {
-  width: 30%;
+  width: 35%;
+  margin-left: 4%;
   display: inline-block;
   text-align: right;
   vertical-align: top;
@@ -398,14 +445,61 @@ input[type="submit"]:hover {
   box-shadow: 15px 15px;
 }
 
-.about-div {
+.service-div {
   width: 70%;
+}
+
+.about-div {
+  width: 60%;
   display: inline-block;
+}
+
+.pdf {
+  border: 3px solid black;
+  -webkit-box-shadow: 15px 15px;
+  box-shadow: 15px 15px;
+  width: 90%;
+}
+
+#spacing {
+  display: none;
+  margin-top: 0px;
+  height: 5px;
+}
+.noreg {
+  display: none;
+}
+
+.nonr {
+  display: none;
 }
 
 @media only screen and (max-width:1000px) {
   h1 {
     font-size: 3rem;
+  }
+  nav {
+    margin: 0px 20px;
+  }
+
+  section {
+    padding: 120px 40px;
+  }
+
+  .anchor {
+    width: 100%;
+  }
+
+  .info-block {
+    width: 100%;
+  }
+
+  .code-block {
+    width: 100%;
+  }
+
+  .service-div {
+    width: 100%;
   }
 
   .project-card {
@@ -423,25 +517,33 @@ input[type="submit"]:hover {
     position: relative;
   }
 
+  .nav-item {
+    margin: 12px;
+  }
 
-  
-  #terminal-comp {
-    display: none;
+  #pfp {
+    width: 70%;
   }
-  .tooltips {
-    display: none;
+
+  .about-div {
+    width: 100%;
   }
-  .spacemaker {
-    display: none;
-  }
+
   .nomobile {
     display: none;
   }
-  .card-link {
-    filter: none;
+
+  #mobnav {
+    margin-top: 20px;
   }
-  .greyfilter {
-    filter: none;
+
+  .noreg {
+    display: block;
+    margin-bottom: 10px;
+  }
+  #spacing {
+    height: 120px;
+    display: none;
   }
 }
 

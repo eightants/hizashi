@@ -11,21 +11,54 @@ class Projects extends Component {
     return (
         <section id="projects">
             <div>
-                <h1>Projects</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere lorem vel condimentum auctor. Vestibulum sed mi dui. Proin et scelerisque enim. Praesent viverra faucibus luctus. Nullam a ornare leo. Phasellus id ornare enim, sit amet consectetur ipsum. Phasellus vel mauris venenatis, aliquam ipsum a, mollis turpis. Suspendisse volutpat aliquam mi et mattis. Mauris a finibus sem. Integer leo nisl, dictum sit amet magna et, dignissim viverra mi. Nulla sed risus ut sapien aliquam tempus. Suspendisse at odio convallis, imperdiet tortor vitae, tincidunt est. Phasellus eu facilisis ante.</p>
+                <h1>Portfolio</h1>
+                <p className="service-div">Projects that I've worked on so far, ranging from frontend designs to full stack applications. Each project starts off as a spark of inspiration and is brought to life through constant brainstorming and planning.  Click on each project to learn more. </p>
                 <div className="projects">
                     <div className="project-card accent">
-                        <h3>Project Name</h3>
-                        <p className="project-desc">Nunc posuere lorem vel condimentum auctor. Vestibulum sed mi dui. Proin et scelerisque enim. Praesent viverra faucibus luctus. Nullam a ornare leo. </p>
+                        <h3>Hizashi</h3>
+                        <button class="tag">In Progress</button>
+                        <p className="project-desc">Interactive portfolio website theme for CSCE 315 with bright colours and bold lines. Inspired by sunshine and the corporate vibe. </p>
                     </div>
                     <div className="project-card accent">
-                        <h3>Project Name</h3>
-                        <p className="project-desc">Nunc posuere lorem vel condimentum auctor. Vestibulum sed mi dui. Proin et scelerisque enim. Praesent viverra faucibus luctus. Nullam a ornare leo. </p>
+                        <h3>Whisperify</h3>
+                        <button class="tag">In Progress</button>
+                        <p className="project-desc">An interactive way to learn about your favourite songs. Inspired by the opening drum riff in Careless Whisper. </p>
                     </div>
+                    <a className="clr-b" href="https://tamuhack.com">
                     <div className="project-card accent">
-                        <h3>Project Name</h3>
-                        <p className="project-desc">Nunc posuere lorem vel condimentum auctor. Vestibulum sed mi dui. Proin et scelerisque enim. Praesent viverra faucibus luctus. Nullam a ornare leo. </p>
+                        <h3>TAMUhack</h3>
+                        <button class="tag">In Progress</button>
+                        <p className="project-desc">Organizing Texas A&M University's largest annual hackathon (and a smaller one). </p>
                     </div>
+                    </a>
+                    <a className="clr-b" href="https://github.com/eightants/terminna">
+                    <div className="project-card accent">
+                        <h3>Terminna</h3>
+                        <button class="tag">React</button>
+                        <p className="project-desc">Modern personal website theme with a novelty terminal navigation. </p>
+                    </div>
+                    </a>
+                    <a className="clr-b" href="https://devpost.com/software/fullhouse">
+                    <div className="project-card accent">
+                        <h3>Full House</h3>
+                        <button class="tag">Hackathon Project</button>
+                        <p className="project-desc">Communal inventory management for social service centers designed to reduce waste and give each community their specific needs. </p>
+                    </div>
+                    </a>
+                    <a className="clr-b" href="https://github.com/eightants/reddit-post-alerts">
+                    <div className="project-card accent">
+                        <h3>Reddit Post Alerts</h3>
+                        <button class="tag">Python</button>
+                        <p className="project-desc">A Discord bot that alerts you of new posts in a subreddit matching your keywords. </p>
+                    </div>
+                    </a>
+                    <a className="clr-b" href="https://anthonyteo.com/rps-ai/">
+                    <div className="project-card accent">
+                        <h3>PARIS</h3>
+                        <button class="tag">Javascript</button>
+                        <p className="project-desc">A rock, paper, scissors AI. </p>
+                    </div>
+                    </a>
                 </div>
             </div>
         </section>

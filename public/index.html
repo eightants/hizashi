@@ -2,22 +2,48 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
       content="Personal Portfolio"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <script>function setcookie() {
       sessionStorage.setItem("clr", "#FCF3B0");
     }
     setcookie();
-    //window.onload = setcookie;
+    window.addEventListener("scroll", function (event) {
+    var scroll = this.scrollY;
+    if (scroll > 10) {
+        document.getElementById('navar').classList.add('floatingNav');
+    } else {
+        document.getElementById('navar').classList.remove('floatingNav');
+    }
+  });
+  window.onload = function(ev) {
+    document.getElementById("menu").addEventListener('click', function(e) {
+      if (document.getElementById("mobnav").style.display == "block") {
+        document.getElementById("mobnav").style.display = "none";
+        document.getElementById("spacing").style.display = "none";
+      } else {
+        document.getElementById("mobnav").style.display = "block";
+        document.getElementById("spacing").style.display = "block";
+      }
+    });
+  }
+  var onresize = function(e) {
+   //note i need to pass the event as an argument to the function
+   width = e.target.outerWidth;
+   if (width > 1000) {
+    document.getElementById("mobnav").style.display = "none";
+   }
+  }
+  window.addEventListener("resize", onresize);
+    //console.log(scroll)
     </script>
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
