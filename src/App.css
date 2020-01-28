@@ -474,6 +474,41 @@ input[type="text"] {
   display: none;
 }
 
+#load {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  transition: all 0.5s ease-in-out;
+  display: none;
+}
+
+#load-img {
+  width: 200px;
+  margin: auto;
+ position:fixed;
+ top: 30%;
+ left:0;
+ right:0;
+ transition: all 0.5s ease-in-out;
+}
+
+#load-img.up {
+  top: 28%;
+}
+
+#load p {
+  font-style: italic;
+  text-align: center;
+  width: 400px;
+  margin: auto;
+ position:fixed;
+ bottom: 10%;
+ left:0;
+ right:0;
+ opacity: 0.9;
+}
+
 @media only screen and (max-width:1000px) {
   h1 {
     font-size: 3rem;

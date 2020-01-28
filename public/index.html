@@ -43,6 +43,21 @@
    }
   }
   window.addEventListener("resize", onresize);
+  function handShake() {
+    setTimeout(function() {
+      sessionStorage.setItem("loaded", 1)
+    }, 2000)
+    var shake = setInterval(function(){
+      if (sessionStorage.getItem("loaded") != 1) {
+        document.getElementById("load").style["display"] = "block";
+      } else {
+        document.getElementById("load").style["display"] = "none";
+        clearInterval(shake);
+      }
+      document.getElementById("load-img").classList.toggle("up");
+     }, 300);
+  }
+  handShake()
     //console.log(scroll)
     </script>
     <!--
@@ -57,6 +72,7 @@
     <title>Anthony Teo</title>
   </head>
   <body>
+    <div id="load"><img id="load-img" src="%PUBLIC_URL%/handshake.svg"><p>Giving you a firm handshake</p></div>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
