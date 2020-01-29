@@ -9,7 +9,7 @@ class About extends Component {
   }
   render() {
     return (
-        <section id="about">
+        <section id="about" data-aos="fade-in">
             <h1>About Me</h1>
             <div className="about-div">
                 <p>

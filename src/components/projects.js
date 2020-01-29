@@ -9,7 +9,7 @@ class Projects extends Component {
     }
   render() {
     return (
-        <section id="projects">
+        <section id="projects" data-aos="fade-in">
             <div>
                 <h1>Portfolio</h1>
                 <p className="service-div">Projects that I've worked on so far, ranging from frontend designs to full stack applications. Each project starts off as a spark of inspiration and is brought to life through constant brainstorming and planning.  Click on each project to learn more. </p>

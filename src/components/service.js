@@ -10,7 +10,7 @@ class Service extends Component {
     }
   render() {
     return (
-        <section id="service">
+        <section id="service" data-aos="fade-in">
             <h1>Service</h1>
             <div className="service-div">
                 <p>

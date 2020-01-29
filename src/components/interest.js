@@ -40,7 +40,7 @@ class Interest extends Component {
 
   render() {
     return (
-        <section id="interest">
+        <section id="interest" data-aos="fade-in">
             <div>
                 <h1>What I Do</h1>
                 <p>
