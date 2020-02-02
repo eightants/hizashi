@@ -51,11 +51,11 @@ class Interest extends Component {
                 </p>
                 <div className="content-block">
                     <div className="info-block">
-                        <div>
+                        <div className="accent">
                             <h4>Interaction</h4>
                             <p>Interactive elements can go a long way in making your website memorable and connect with users better. I make it my goal to give experiences beyond just reading a document. Type a color in the input field to change the accent color of this site!</p>
                         </div>
-                        <div>
+                        <div className="accent">
                             <h4>User Experience</h4>
                             <p>The experience of the software user is very important, and the uniform theme of this website can help with that. This website is accessible and responsive on all screen sizes. </p>
                         </div>
