@@ -12,6 +12,8 @@ getclr() {
 }
 ```
 
+Check out the website [here](https://hizashi.netlify.com). 
+
 ## Setup
 To set up Hizashi and customise it for your use, clone the repository and install dependencies. 
 ```
