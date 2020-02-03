@@ -23,7 +23,7 @@ class Home extends Component {
         <section id="home">
           <div className="anchor"  data-aos="fade-in" data-aos-duration="1000">
               <h1 className='anchor-txt'>Hi, I'm Anthony. </h1>
-              <p>I am a developer interested in the digital experience. Welcome to Hizashi, an interactive portfolio website with bright colours and bold lines. The goal of this portfolio theme was to encapsulate the feeling of sunshine and the corporate vibe of Tokyo, two elements in the movie Tenki no Ko. </p>
+              <p>Welcome to Hizashi, an interactive portfolio website with bright colours and bold lines. The goal of this portfolio theme was to encapsulate the feeling of sunshine and the corporate vibe of Tokyo, two elements in the movie Tenki no Ko. </p>
               <a href={resume}><button class="btn social-btn accent"><img alt="" src={resumeimg}></img></button></a>
               <a href="mailto:yihonganthony@gmail.com"><button class="btn social-btn accent"><img alt="" src={emailimg}></img></button></a>
               <a href="https://github.com/eightants"><button class="btn social-btn accent"><img alt="" src={githubimg}></img></button></a>
