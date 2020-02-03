@@ -13,7 +13,7 @@ class About extends Component {
             <h1>About Me</h1>
             <div className="about-div">
                 <p>
-Hi, I'm Anthony. I'm a Computer Science student at Texas A&M University. I've spent most of my academic career in The Netherlands and am currently living in the United States. This website is a collection of my projects and interests.
+Hi, I'm Anthony. I'm a Computer Science student at Texas A&M University. This website is a collection of my projects and interests.
 <br></br>
 <br></br>
 I am passionate about the process of creation and like to build digital experiences. During my free time, I enjoy composing music on my piano. Occasionally you can also find me cooking, watching Formula 1, or playing football.

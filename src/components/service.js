@@ -14,10 +14,10 @@ class Service extends Component {
             <h1>Service</h1>
             <div className="service-div">
                 <p>
-                    In terms of contribution to the computer science community, there is still much left for me to do. I have participated in many events related to computer science and also hosted a few to help connect the coding community. I hope to continue to do so while working on purposeful projects in my own time and through internships. 
+                Cras faucibus risus eu tellus ultricies consectetur. Nullam in est vel dui convallis accumsan quis ut nulla. Aenean ultricies faucibus enim a venenatis. Sed et ante pharetra, lacinia dolor quis, feugiat arcu. Cras euismod a neque rhoncus pellentesque. 
                 </p>
                 <p>
-                    As a student, I aim to continue learning about various aspects of computer science, learn new languages and tools in software development, and continue to refine my design skills. I also hope to continue to deepen my understanding of research in machine learning and data science through my lab. 
+                Nunc ornare sodales magna, eget vulputate risus. Mauris velit dui, lacinia nec ipsum sit amet, rhoncus sodales orci. Suspendisse ut finibus nisl. Suspendisse eget est tortor. Ut tristique lacus nec tortor rutrum aliquam. Aliquam id nisi quis nisl aliquet consectetur. Aenean suscipit venenatis lectus et dignissim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus aliquet mattis ipsum ut pretium. Aliquam accumsan nisi eu eros pellentesque, at aliquam metus pulvinar. 
                 </p>
             </div>
             <div className="project-card accent">

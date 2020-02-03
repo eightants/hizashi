@@ -19,6 +19,10 @@ class Interest extends Component {
         for (var i = 0; i < acc_arr.length; i++) {
             acc_arr[i].style["background-color"] = sessionStorage.getItem('clr');
         }
+        var svg_arr = document.getElementsByClassName("accent-svg");
+        for (var i = 0; i < svg_arr.length; i++) {
+            svg_arr[i].setAttribute("fill", sessionStorage.getItem('clr'));
+        }
         document.getElementById('comment').style["color"] = sessionStorage.getItem('clr');
     }
 
@@ -44,10 +48,10 @@ class Interest extends Component {
             <div>
                 <h1>What I Do</h1>
                 <p>
-                    I'm really interested in the process of creation, and have worked on many projects driven by that curiosity. Projects that I am currently working on include organizing events with <a href="https://tamuhack.com">TAMUhack</a> and the <a href="https://github.com/aggie-coding-club">Aggie Coding Club</a>, researching machine learning in the <a href="http://people.tamu.edu/~guangzhou92/Data_Lab/">DATA Lab</a>, and helping out on the <a href="https://cypres.engr.tamu.edu/">CYPRES project</a>. 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam venenatis risus eros, dignissim faucibus dui imperdiet vitae. Quisque convallis orci in nibh congue, nec mollis nisi porttitor. In interdum mi scelerisque, tincidunt erat sed, ultricies risus. Nulla hendrerit sodales sapien, accumsan faucibus dui pellentesque et. Suspendisse varius ornare erat in ullamcorper. Sed ut euismod est. Nunc eget magna ut lectus ultricies tempor. Suspendisse blandit interdum finibus.
                 </p>
                 <p>
-                    Through my experience in events with TAMUhack and other organizations, I found that human connections and interactions are very meaningful to me. That motivated me to look at software as experiences, and to look for ways to create digital experiences that improve our experience with software. 
+                    Nulla lacinia dictum eros, a porta est gravida vel. Vestibulum est nisl, vehicula quis lobortis et, suscipit ut leo. Aenean vitae finibus elit. Proin pellentesque condimentum dui at porta. Proin pharetra interdum libero eget sollicitudin. Maecenas sed faucibus enim. Sed sit amet diam urna. Nulla facilisi. Quisque leo erat, porttitor ut dignissim vitae, dapibus ut purus. Vestibulum suscipit, metus eu varius tempus, metus dolor tincidunt nunc, quis tincidunt arcu ante eu leo. Nunc eget cursus nibh, vitae mollis eros. Nam venenatis rhoncus elementum. 
                 </p>
                 <div className="content-block">
                     <div className="info-block">
@@ -70,12 +74,7 @@ class Interest extends Component {
                         <button class="reset" onClick={this.resetclr}>Reset Color</button>
                     </div>
                 </div>
-                <br></br><br></br>
-                <p>Design is an area that I am really passionate about, and I am always reading articles and learning from other designers. The inspiration for designs can come from any part of daily life, and that has really helped me to discover better inspiration for my software projects. I recently worked on a <a href="https://github.com/eightants/terminna">website theme inspired by the Unix terminal</a>, and I am currently working on a web application inspired by the opening drum riff in Careless Whisper. The design and functionality of this website was also inspired by something personal. I recently <a href="https://gkids.com/films/weathering-with-you/">watched a film</a> where the theme of sunshine and the slice of life elements of Tokyo really resonated with me. </p>
-                <p>My works have mostly involved design and software engineering and hope to go into full-stack software development, but I have been exploring machine learning and data science through research and personal projects as potential fields in the future. The main tools I have worked with are Python, C++, HTML/CSS, Javascript, React, and Node. </p>
-                <p>No matter what I work on in the future, I hope that my impact on the world will connect people from all backgrounds, creating a community of technology users. Until then, I will keep searching for inspiration and pursuing my passions in computer science. </p>
-                <iframe className="pdf" title="resume" src={resume} style={{height: "600px"}}></iframe>
-            </div>
+                </div>
         </section>
     );
   }

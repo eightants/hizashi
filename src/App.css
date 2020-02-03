@@ -70,7 +70,7 @@ a:hover {
 
 section {
   overflow: hidden;
-  padding: 120px 15%;
+  padding: 80px 15%;
 }
 
 .anchor {
@@ -181,7 +181,7 @@ nav {
 }
 
 .floatingNav {
-  box-shadow: 0px 0px 6px 2px rgb(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 6px 0px rgb(0, 0, 0, 0.2);
 }
 
 .navbar-brand {

@@ -2,7 +2,7 @@ import React from 'react';
 import { HashRouter, 
   BrowserRouter as Router, 
   Route, 
-  Link, 
+  a, 
   Switch
 } from 'react-router-dom';
 //import logo from './logo.svg';
@@ -23,40 +23,36 @@ function getclr() {
 
 function App() {
   return (
-    <HashRouter basename="/">
     <div className="App" id='page'>
           <header className="sticky-top" id="navar">
             <nav className="navbar navbar-expand-lg navbar-dark navbar-bg">
             <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <Link className="btn black accent navbar-brand px-10 mx-0 col-lg-4 nomobile" to="/">Anthony Teo</Link>
+                    <a className="btn black accent navbar-brand px-10 mx-0 col-lg-4 nomobile" href="#home">Hizashi</a>
                     <button id="menu" className="btn accent noreg">Menu</button>
                     <ul className="navbar-nav px-8 col-lg-8 justify-content-end nomobile">
-                        <li className="nav-item mx-4"><Link className="nav-link" to="/">Home</Link></li>
-                        <li className="nav-item mx-4"><Link className="nav-link" to="interest">Pro. Image</Link></li>
-                        <li className="nav-item mx-4"><Link className="nav-link" to="service">Service</Link></li>
-                        <li className="nav-item mx-4"><Link className="nav-link" to="portfolio">Portfolio</Link></li>
-                        <li className="nav-item mx-4"><Link className="nav-link" to="about">About</Link></li>
+                        <li className="nav-item mx-4"><a className="nav-link" href="#home">Home</a></li>
+                        <li className="nav-item mx-4"><a className="nav-link" href="#interest">What I Do</a></li>
+                        <li className="nav-item mx-4"><a className="nav-link" href="#service">Service</a></li>
+                        <li className="nav-item mx-4"><a className="nav-link" href="#portfolio">Portfolio</a></li>
+                        <li className="nav-item mx-4"><a className="nav-link" href="#about">About</a></li>
                     </ul>
                     <ul id="mobnav" className="navbar-nav px-8 col-lg-8 justify-content-end nonr">
-                        <li className="nav-item mx-4"><Link className="nav-link" to="/">Home</Link></li>
-                        <li className="nav-item mx-4"><Link className="nav-link" to="interest">Pro. Image</Link></li>
-                        <li className="nav-item mx-4"><Link className="nav-link" to="service">Service</Link></li>
-                        <li className="nav-item mx-4"><Link className="nav-link" to="portfolio">Portfolio</Link></li>
-                        <li className="nav-item mx-4"><Link className="nav-link" to="about">About</Link></li>
+                        <li className="nav-item mx-4"><a className="nav-link" href="#home">Home</a></li>
+                        <li className="nav-item mx-4"><a className="nav-link" href="#interest">What I Do</a></li>
+                        <li className="nav-item mx-4"><a className="nav-link" href="#service">Service</a></li>
+                        <li className="nav-item mx-4"><a className="nav-link" href="#portfolio">Portfolio</a></li>
+                        <li className="nav-item mx-4"><a className="nav-link" href="#about">About</a></li>
                     </ul>
                 </div>
             </nav>
         </header>
         <div id="spacing"></div>
-        <Switch>
-          <Route exact path='/' render={() => <Home themeclr={getclr()} />} />
-          <Route exact path='/about' component={About} />
-          <Route exact path='/portfolio' component={Projects} />
-          <Route exact path='/interest' component={Interest} />
-          <Route exact path='/service' component={Service} />
-        </Switch>
+        <Home themeclr={getclr()} />
+        <Interest />
+        <Service />
+        <Projects />
+        <About />
     </div>
-    </HashRouter>
   );
 }
 

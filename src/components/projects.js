@@ -9,16 +9,11 @@ class Projects extends Component {
     }
   render() {
     return (
-        <section id="projects" data-aos="fade-in">
+        <section id="portfolio" data-aos="fade-in">
             <div>
                 <h1>Portfolio</h1>
-                <p className="service-div">Projects that I've worked on so far, ranging from frontend designs to full stack applications. Each project starts off as a spark of inspiration and is brought to life through constant brainstorming and planning.  Click on each project to learn more. </p>
+                <p className="service-div">Nulla facilisi. Morbi eleifend volutpat lacus a vestibulum. Aliquam erat volutpat. Maecenas ut gravida dui, non egestas nibh. Phasellus sed sapien sed arcu lobortis venenatis at sit amet nisl. Sed vitae rutrum nulla, sed luctus nisl. Duis in rutrum augue. </p>
                 <div className="projects">
-                    <div className="project-card accent">
-                        <h3>Hizashi</h3>
-                        <button class="tag">In Progress</button>
-                        <p className="project-desc">Interactive portfolio website theme for CSCE 315 with bright colours and bold lines. Inspired by sunshine and the corporate vibe. </p>
-                    </div>
                     <div className="project-card accent">
                         <h3>Whisperify</h3>
                         <button class="tag">In Progress</button>
